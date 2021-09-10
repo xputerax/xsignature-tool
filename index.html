@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" x-data="bill()">
+        <div class="form">
+            <div class="input-group">
+                <span class="input-label">x signature key</span>
+                <input type="text" x-model="x_signature_key" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">id</span>
+                <input type="text" x-model="bill.id" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">collection_id</span>
+                <input type="text" x-model="bill.collection_id" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">paid</span>
+                <input type="text" x-model="bill.paid" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">state</span>
+                <input type="text" x-model="bill.state" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">amount</span>
+                <input type="text" x-model="bill.amount" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">paid_amount</span>
+                <input type="text" x-model="bill.paid_amount" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">due_at</span>
+                <input type="text" x-model="bill.due_at" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">email</span>
+                <input type="text" x-model="bill.email" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">mobile</span>
+                <input type="text" x-model="bill.mobile" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">name</span>
+                <input type="text" x-model="bill.name" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">url</span>
+                <input type="text" x-model="bill.url" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">paid_at</span>
+                <input type="text" x-model="bill.paid_at" />
+            </div>
+            <div class="input-group">
+                <span class="input-label">x_signature</span>
+                <input type="text" x-model="bill.x_signature" />
+            </div>
+
+            <button x-on:click="clickMe">xxx</button>
+        </div>
+
+        <div>
+            <textarea x-text="postmanData" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

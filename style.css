@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-group {
+    /* margin-bottom: 1rem; */
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-label {
+    padding-right: 2rem;
+}
